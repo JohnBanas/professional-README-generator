@@ -1,5 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('../Develop/utils/generateMarkdown');
+
 
 
 
@@ -62,15 +64,13 @@ const questions = [{
     message: 'Any additional instructions for people with questions?'
   }];
 
-inquirer.prompt(questions)
-  .then(function (data) {
-    console.log(data);
-  });
-module.export = data;
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// inquirer.prompt(questions)
+//   .then(function (data) {
+//     writeToFile('./index.txt',data);
+//   });
 
-}
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
 function init() {}
