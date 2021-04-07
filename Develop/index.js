@@ -18,28 +18,28 @@ const questions = [{
   },
   {
     type: 'input',
-    name: 'installation instructions',
+    name: 'installation',
     message: 'How do others install your application?'
   },
   {
     type: 'input',
-    name: 'usage information',
+    name: 'usage',
     message: 'How may other people use your application?'
     
   },
   {
     type: 'input',
-    name: 'contribution guidelines',
+    name: 'contribution',
     message: 'How may other developers contribute to your repository?'
   },
   {
     type: 'input',
-    name: 'test instructions',
+    name: 'test',
     message: 'What testing is available and how is testing performed?'
   },
   {
     type: 'checkbox',
-    name: 'license options',
+    name: 'license',
     message: 'Please choose a license, if you aren\'t sure, select none. You can always add a license later.',
     choices: ['none', 'GNU AGPLv3', 'GNU GPLv3',
       'GNU LGPLv3', 'Mozilla Public License 2.0',
@@ -60,7 +60,12 @@ const questions = [{
     type: 'input',
     name: 'questions',
     message: 'Any additional instructions for people with questions?'
-}];
+  }];
+
+inquirer.prompt(questions)
+  .then(function (data) {
+    console.log(data);
+  });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
