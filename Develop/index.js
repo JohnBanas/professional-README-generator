@@ -66,7 +66,7 @@ inquirer.prompt(questions)
   .then(function (data) {
     console.log(data);
   });
-
+module.export = data;
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
