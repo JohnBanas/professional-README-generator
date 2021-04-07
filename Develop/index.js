@@ -11,33 +11,32 @@ const generateMarkdown = require('../Develop/utils/generateMarkdown');
 const questions = [{
   type: 'input',
   name: 'title',
-  message: 'What is the title of your repository?'
+  message: 'What is the title of your repository? (Required)'
 },
   {
     type: 'input',
     name: 'description',
-    message: 'What is the description of your repository?'
+    message: 'What is the description of your repository? (Required)'
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'How do others install your application?'
+    message: 'If there is an installation process, please list the steps for installation here.'
   },
   {
-    type: 'input',
+    type: 'confirm',
     name: 'usage',
-    message: 'How may other people use your application?'
-    
+    message: 'This section contains instructions on how to use your application. You may also include examples of your application in use. (Pictures, gif, etc)'
   },
   {
     type: 'input',
     name: 'contribution',
-    message: 'How may other developers contribute to your repository?'
+    message: 'May other developers contribute to your repository? If so, list those steps here.'
   },
   {
     type: 'input',
     name: 'test',
-    message: 'What testing is available and how is testing performed?'
+    message: 'Is testing available and how is testing performed?'
   },
   {
     type: 'checkbox',
@@ -51,12 +50,12 @@ const questions = [{
   {
     type: 'input',
     name: 'username',
-    message: 'What is your GitHub username?'
+    message: 'What is your GitHub username? (Required)'
   },
   {
     type: 'input',
     name: 'email',
-    message: 'What is your email address?'
+    message: 'What is your email address? (Required)'
   },
   {
     type: 'input',
