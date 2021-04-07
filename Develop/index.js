@@ -64,10 +64,13 @@ const questions = [{
     message: 'Any additional instructions for people with questions?'
   }];
 
-// inquirer.prompt(questions)
-//   .then(function (data) {
-//     writeToFile('./index.txt',data);
-//   });
+const userPrompts = () => {
+  inquirer.prompt(questions)
+    .then(function (data) {
+      console.log(data);
+  });
+}
+userPrompts();
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
