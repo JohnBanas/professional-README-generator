@@ -1,6 +1,8 @@
+//require modules
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
+const utils = require('utils');
 
 
 
@@ -8,6 +10,8 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
+// give options for different sections and then add them to 
+// the table of contents in generateMarkdown.js
 const questions = [{
   type: 'input',
   name: 'title',
@@ -152,7 +156,7 @@ const questions = [{
   name: 'questions',
   message: 'Please list instructions for those who wish to contact you.',
   when: ({ questionsConfirm }) => {
-    if (questionsConfrim) {
+    if (questionsConfirm) {
       return true;
     } else {
       return false;
@@ -160,21 +164,29 @@ const questions = [{
   }
 }]; //end of questions array
 
-//this function uses the questions array to 
-//prompt the questions through the terminal and console logs the person's respsonses
-const userPrompts = () => {
-  inquirer.prompt(questions)
-    .then(function (data) {
-      console.log(data);
-    });
-}
-userPrompts();
+//changing this to be in the async function
+// const userAnswers = () => {
+//   inquirer.prompt(questions)
+//     .then(function (data) {
+//       console.log(data);
+//     });
+// }
+
+// userPrompts();
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+// create async function with catch error
+async function init() {
+  try {
+    const userAnswers = await inquirer.prompt(questions);
+    console.log('Thank you! The current data is being processed into your README.md: ', userAnswers);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 // Function call to initialize app
 init();
