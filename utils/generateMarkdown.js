@@ -78,11 +78,6 @@ let tableOfContents =
       `
   * [Testing](#testing)`
   };
-  if (data.questions) {
-    tableOfContents +=
-      `
-  * [Questions](#questions)`
-  };
 
   //append table to template
   markdownTemplate += tableOfContents;
@@ -90,7 +85,7 @@ let tableOfContents =
   //add contact info and license (required)
   markdownTemplate +=
     `
-  * [Contact](#contact)`;
+  * [Questions](#questions)`;
   markdownTemplate +=
     `
   * [License](#license)
@@ -147,29 +142,20 @@ let tableOfContents =
   };
 
   //questions
-  if (data.questions) {
     markdownTemplate +=
       `
       
 ## Questions
       
-  _For further questions please follow these steps:_
+  _For further questions:_
 
-  ${data.questions}`
-  }
-
-  //contact
-  markdownTemplate +=
-    `
-    
-## Contact
-      
+    ${data.questions}
+  
   _Contact Info:_
 
-  * GitHub: [${data.username}](https://github.com/${data.username})
+    * GitHub: [${data.username}](https://github.com/${data.username})
 
-  * Email: [${data.email}](${data.email})`;
-
+    * Email: [${data.email}](${data.email})`;
   
   markdownTemplate +=
     `

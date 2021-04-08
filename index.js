@@ -150,16 +150,11 @@ const questions = [{
   }
 },
 {
-  type: 'confirm',
-  name: 'questionsConfirm',
-  message: 'May individuals contact you with questions?'
-},
-{
   type: 'input',
   name: 'questions',
   message: 'Please list instructions for those who wish to contact you.',
-  when: ({ questionsConfirm }) => {
-    if (questionsConfirm) {
+  validate: (nameInput) => {
+    if (nameInput) {
       return true;
     } else {
       return false;
