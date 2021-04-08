@@ -2,8 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const utils = require('utils');
-const createReadMe = utils.promisify(writeToFile);
+const util = require('util');
 
 // TODO: Create an array of questions for user input
 // give options for different sections and then add them to 
@@ -181,13 +180,15 @@ const questions = [{
 // TODO: Create a function to write README file
 // this is an await in the async function
 function writeToFile(fileName, data) {
-  fs.writeToFile(fileName, data, error => {
+  fs.writeFile(fileName, data, error => {
     if (error) {
       return console.log('Sorry there was an error : ' + error);
     }
   })
 }
 
+
+const createReadMe = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
 // create async function with catch for errors
 async function init() {
@@ -198,7 +199,7 @@ async function init() {
     const myMarkdown = generateMarkdown(userAnswers);
     console.log(myMarkdown);
     //write the readme file after the markdown is made
-    await createReadMe('README.md', myMarkdown);
+    await createReadMe('README1.md', myMarkdown);
     
   } catch (error) {
     console.log('Sorry there was an error.' + error);
