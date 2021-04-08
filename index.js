@@ -110,11 +110,19 @@ const questions = [{
 { //checkbox that allows license choice
   type: 'checkbox',
   name: 'license',
-  message: 'Please choose a license, if you aren\'t sure, select none. You can always add a license later.',
-  choices: ['none', 'GNU AGPLv3', 'GNU GPLv3',
+  message: 'Please choose a license.',
+  choices: ['GNU AGPLv3', 'GNU GPLv3',
     'GNU LGPLv3', 'Mozilla Public License 2.0',
     'Apache License 2.0', 'MIT License', 'Boost Software License 1.0',
-    'The Unlicense']
+    'The Unlicense'],
+  validate: nameInput => {
+    if (nameInput) {
+      return true;
+    } else {
+      console.log('Please select a license.');
+      return false;
+    }
+  }
 },
 {
   type: 'input',
@@ -193,7 +201,7 @@ async function init() {
     await createReadMe('README.md', myMarkdown);
     
   } catch (error) {
-    console.log(error);
+    console.log('Sorry there was an error.' + error);
   }
 };
 
