@@ -1,13 +1,9 @@
-//require modules
+// TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const utils = require('utils');
-
-
-
-
-// TODO: Include packages needed for this application
+const createReadMe = utils.promisify(writeToFile);
 
 // TODO: Create an array of questions for user input
 // give options for different sections and then add them to 
@@ -175,18 +171,32 @@ const questions = [{
 // userPrompts();
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+// this is an await in the async function
+function writeToFile(fileName, data) {
+  fs.writeToFile(fileName, data, error => {
+    if (error) {
+      return console.log('Sorry there was an error : ' + error);
+    }
+  })
+}
 
 // TODO: Create a function to initialize app
-// create async function with catch error
+// create async function with catch for errors
 async function init() {
   try {
     const userAnswers = await inquirer.prompt(questions);
     console.log('Thank you! The current data is being processed into your README.md: ', userAnswers);
+    // get markdown template from generateMarkdown.js passing the answers as parameter
+    const myMarkdown = generateMarkdown(userAnswers);
+    console.log(myMarkdown);
+    //write the readme file after the markdown is made
+    await createReadMe('README.md', myMarkdown);
+    
   } catch (error) {
     console.log(error);
   }
 };
+
 
 // Function call to initialize app
 init();
