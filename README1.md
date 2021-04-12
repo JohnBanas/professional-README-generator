@@ -1,40 +1,57 @@
-# Title here
+# title
 
 ## Description
 
-Nunc mattis enim ut tellus elementum sagittis. Sit amet volutpat consequat mauris. Nunc mattis enim ut tellus elementum sagittis. Sit amet volutpat consequat mauris. 
+This is a description
 
 ![badge](https://img.shields.io/badge/license-MITLicense-brightorange)
 
 You can access more badges and their purposes at [shields.io](https://shields.io)
 
 ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
   * [Contribution](#contribution)
   * [Testing](#testing)
-  * [Contact](#contact)
+  * [Questions](#questions)
   * [License](#license)
     
     
+## Installation
+    
+  _Follow these steps to properly install this application:_
+
+  This would be where you describe how to install your project.
+      
+## Usage
+
+  _Instructions for use:_
+
+  This is how you add text to your instructions and explain how to use your application
       
 ## Contribution
 
   _If you would like to contribute, please adhere to these guidelines:_
 
-  Nunc mattis enim ut tellus elementum sagittis. Sit amet volutpat consequat mauris.
+  Please use this space to explain to developers rules for contribution.
       
 ## Testing
 
   _Instructions for testing application:_
 
-  Nunc mattis enim ut tellus elementum sagittis. Sit amet volutpat consequat mauris. Nunc mattis enim ut tellus elementum sagittis. Sit amet volutpat consequat mauris.
-    
-## Contact
+  This is where you explain how to test your application.
       
+## Questions
+      
+  _For further questions:_
+
+    Please reach out via my email or carrier pigeon.
+  
   _Contact Info:_
 
-  * GitHub: [JohnBanas](https://github.com/JohnBanas)
+    * GitHub: [JohnBanas](https://github.com/JohnBanas)
 
-  * Email: [example@gmail.com](example@gmail.com)
+    * Email: [Jbanas9124@gmail.com](Jbanas9124@gmail.com)
     
 ## License
 
