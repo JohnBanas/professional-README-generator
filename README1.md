@@ -1,8 +1,8 @@
-# title
+# README.md Generator with Node.js
 
 ## Description
 
-This is a description
+This is a command line interface application which creates a README file for your application repositories. This will allow people to understand how your app works, how to install it, and how other developers can contribute to your project. This README.md is being created via this system.
 
 ![badge](https://img.shields.io/badge/license-MITLicense-brightorange)
 
@@ -11,8 +11,6 @@ You can access more badges and their purposes at [shields.io](https://shields.io
 ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contribution](#contribution)
-  * [Testing](#testing)
   * [Questions](#questions)
   * [License](#license)
     
@@ -21,37 +19,25 @@ You can access more badges and their purposes at [shields.io](https://shields.io
     
   _Follow these steps to properly install this application:_
 
-  This would be where you describe how to install your project.
+  To install this app you will need to run npm install for the following dependencies in your CLI, inquirer, fs, and util. THis will allow the question prompts from the CLI for you to create your README.md.
       
 ## Usage
 
   _Instructions for use:_
 
-  This is how you add text to your instructions and explain how to use your application
-      
-## Contribution
-
-  _If you would like to contribute, please adhere to these guidelines:_
-
-  Please use this space to explain to developers rules for contribution.
-      
-## Testing
-
-  _Instructions for testing application:_
-
-  This is where you explain how to test your application.
+  Run the command node index.js in the CLI and the inquirer package will begin prompts for your README section information. As you answer each question you dynamically form the sections, and table of contents for your README. All the responses are converted to markdown format and the fs.write package will create the README.md file automatically upon completing the prompts.
       
 ## Questions
       
   _For further questions:_
 
-    Please reach out via my email or carrier pigeon.
+    If you have any questions, or additional feedback, please feel free to email me and I will respond as soon as possible.
   
   _Contact Info:_
 
-    * GitHub: [JohnBanas](https://github.com/JohnBanas)
+     GitHub: [JohnBanas](https://github.com/JohnBanas)
 
-    * Email: [Jbanas9124@gmail.com](Jbanas9124@gmail.com)
+     Email: [jbanas9124@gmail.com](jbanas9124@gmail.com)
     
 ## License
 
