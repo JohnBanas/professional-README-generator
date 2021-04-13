@@ -19,7 +19,7 @@ You can access more badges and their purposes at [shields.io](https://shields.io
     
   _Follow these steps to properly install this application:_
 
-  To install this app you will need to run npm install for the following dependencies in your CLI, inquirer, fs, and util. THis will allow the question prompts from the CLI for you to create your README.md.
+  To install this app you will need to run npm install for the following dependencies in your CLI, inquirer, fs, and util. This will allow the question prompts from the CLI for you to create your README.md.
       
 ## Usage
 
