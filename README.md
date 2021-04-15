@@ -49,7 +49,7 @@ You can access more badges and their purposes at [shields.io](https://shields.io
 
   GitHub: [JohnBanas](https://github.com/JohnBanas)
 
-  Email: [jbanas9124@gmail.com](jbanas9124@gmail.com)
+  Email: [jbanas9124@gmail.com](mailto:jbanas9124@gmail.com)
     
 ## License
 
