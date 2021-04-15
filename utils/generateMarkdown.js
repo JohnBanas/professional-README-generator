@@ -149,13 +149,13 @@ let tableOfContents =
       
   _For further questions:_
 
-    ${data.questions}
+  ${data.questions}
   
   _Contact Info:_
 
-     GitHub: [${data.username}](https://github.com/${data.username})
+  GitHub: [${data.username}](https://github.com/${data.username})
 
-     Email: [${data.email}](${data.email})`;
+  Email: [${data.email}](${data.email})`;
   
   markdownTemplate +=
     `
