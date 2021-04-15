@@ -43,13 +43,13 @@ You can access more badges and their purposes at [shields.io](https://shields.io
       
   _For further questions:_
 
-    If you have any questions, or additional feedback, please feel free to email me and I will respond as soon as possible.
+  If you have any questions, or additional feedback, please feel free to email me and I will respond as soon as possible.
   
   _Contact Info:_
 
-     GitHub: [JohnBanas](https://github.com/JohnBanas)
+  GitHub: [JohnBanas](https://github.com/JohnBanas)
 
-     Email: [jbanas9124@gmail.com](jbanas9124@gmail.com)
+  Email: [jbanas9124@gmail.com](jbanas9124@gmail.com)
     
 ## License
 
