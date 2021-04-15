@@ -155,7 +155,7 @@ let tableOfContents =
 
   GitHub: [${data.username}](https://github.com/${data.username})
 
-  Email: [${data.email}](${data.email})`;
+  Email: [${data.email}](mailto:${data.email})`;
   
   markdownTemplate +=
     `
